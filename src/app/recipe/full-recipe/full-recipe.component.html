@@ -1,0 +1,21 @@
+<ng-container *ngIf="recipe">
+     <div class="d-flex justify-content-end">
+          <a *ngIf="selectedIngredients.length>0" routerLink="/search">Return to recipe results
+               <fa-icon [icon]="faSearch"></fa-icon>
+          </a>
+     </div>
+
+<!--  header  -->
+     <div class="row" recipeHeader [recipe]="recipe"></div>
+<!--  body  -->
+     <div class="row" recipeBody [recipe]="recipe"></div>
+</ng-container>
+
+
+
+
+<ng-container *ngIf="!recipe && selectedIngredients.length<1">
+     <spinner [color]="colors.color1" [size]="'2em'">
+          Loading recipe...<br>
+     </spinner>
+</ng-container>

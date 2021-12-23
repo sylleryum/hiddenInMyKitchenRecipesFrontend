@@ -1,0 +1,11 @@
+<ng-template [ngIf]="recipe">
+     <h5>Recipes found: {{ recipe.total | json}}</h5>
+     <div class="row col-12 m-0 h-min-80">
+          <app-card *ngFor="let rec of recipe.results" class="col-md-4 py-1 px-1"
+               [img]="rec.strMealThumb"
+               [id]="rec.idMeal"
+               [text]="rec.strMeal">
+          </app-card>
+     </div>
+     <br>
+</ng-template>

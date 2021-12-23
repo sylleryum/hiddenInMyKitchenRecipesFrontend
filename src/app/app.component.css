@@ -1,0 +1,40 @@
+@media (max-width: 575px){
+  .col-12-local {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /*margin-right: 3vh;*/
+    /*margin-left: 3vh;*/
+  }
+}
+
+@media (min-width: 576px){
+  .sidebar-config{
+    /*position: fixed;*/
+    max-width: 35vh;
+    position: fixed;
+    z-index: 1;
+    /*left: 10px;*/
+    overflow-x: hidden;
+    padding-right: 5vh;
+    /*padding: 8px 0;*/
+  }
+  .maincontent-config{
+    /*min-width: 70vh;*/
+    margin-left: 35vh;
+    /*margin-right: 3vh;*/
+  }
+}
+
+.behind{
+  /*position: fixed;*/
+  z-index: 1;
+}
+
+.front{
+  /*position: fixed;*/
+  z-index: 2;
+}
+
+.footer-margin{
+  margin-left: 30vh;
+}

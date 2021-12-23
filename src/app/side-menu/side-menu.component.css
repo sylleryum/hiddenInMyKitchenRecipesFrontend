@@ -1,0 +1,33 @@
+.bg{
+    /*background-color: var(--colorSpotify);*/
+    /*background-color: antiquewhite;*/
+    border-radius: .3rem;
+    padding: 5px;
+}
+
+/*.link-selection:hover{*/
+/*    background-color: #2a53a6!important;*/
+/*}*/
+
+@media (min-width: 576px){
+    .hr-mobile {
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+.scroll{
+    /*--scrollbar-border-radius: 7px;*/
+    /*--scrollbar-padding: 4px;*/
+    /*--scrollbar-viewport-margin: 0;*/
+    --scrollbar-track-color: aqua;
+    --scrollbar-thumb-color: green;
+    /*--scrollbar-wrapper-color: pink;*/
+    /*--scrollbar-thumb-hover-color: var(--scrollbar-thumb-color);*/
+    /*--scrollbar-size: 5px;*/
+    /*--scrollbar-hover-size: var(--scrollbar-size);*/
+    /*--scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;*/
+    /*--scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;*/
+}

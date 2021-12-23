@@ -1,0 +1,45 @@
+<app-on-error *ngIf="error!=undefined;else valid" [status]="error.status" [statusMessage]="error.statusText">
+     Looks like our fridge is empty at the moment, <br>please refresh the page or comeback later
+</app-on-error>
+
+<ng-template #valid>
+     <div class="mt-2">
+          <ng-template [ngIf]="availableIngredients.length>1" [ngIfElse]="loading">
+               <div class="">
+                    <!--sidebar-->
+                    <div class="col-12-local h-max-100 overflow-auto sidebar-config front pl-3 bg-w">
+                         <app-side-menu class="pt-0"></app-side-menu>
+                    </div>
+                    <!--main content-->
+                    <div class=" col-12-local maincontent-config m-1-local">
+                         <div class="container-fluid col-md-10">
+                              <app-typeahead>
+                                   Search for ingredient:
+                              </app-typeahead>
+
+                              <app-current-selection></app-current-selection>
+                              <loader></loader>
+                              <div class="justify-content-center d-flex">
+                                   <router-outlet></router-outlet>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+               <app-footer class="p-0 ml-2 behind w-100">
+                    <p class="p-0 m-0">Find more information and source code at:
+                         <a href="https://github.com/sylleryum/hiddenInMyKitchenRecipesFrontend">https://github.com/sylleryum/hiddenInMyKitchenRecipesFrontend</a>
+                    </p>
+               </app-footer>
+          </ng-template>
+
+          <!--loading-->
+          <ng-template #loading>
+               <spinner [color]="colors.color4" [size]="'2em'">
+                    Looking for ingredients in our fridge<br>
+               </spinner>
+          </ng-template>
+
+
+     </div>
+</ng-template>

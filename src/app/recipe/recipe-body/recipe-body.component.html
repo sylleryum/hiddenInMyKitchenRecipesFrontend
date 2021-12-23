@@ -1,0 +1,28 @@
+<div class="container-fluid text-center justify-content-center">
+     <div class="row text-center">
+          <div>
+               <h4 class="font-weight-bold">Ingredients</h4>
+
+               <div class="form-group">
+                    <div class="checkbox" *ngFor="let ing of ingredients; let i = index">
+                         <input type="checkbox" name="packersOff" id="{{i}}">
+                         <label for="{{i}}" class="strikethrough">&nbsp;{{ing[0]}} {{ing[1]}}</label>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+
+     <div class="row">
+          <div>
+               <h4 class="font-weight-bold">Instructions</h4>
+<!--               <ng-template [ngIf]="ordered" [ngIfElse]="unordered">-->
+<!--                    <ul class="break p-0" [innerHTML]="instructions"></ul>-->
+<!--               </ng-template>-->
+<!--               <ng-template #unordered>-->
+<!--                    <ol class="break p-0" [innerHTML]="instructions"></ol>-->
+<!--               </ng-template>-->
+               <div class="line-break" [innerHTML]="instructions"></div>
+          </div>
+     </div>
+</div>

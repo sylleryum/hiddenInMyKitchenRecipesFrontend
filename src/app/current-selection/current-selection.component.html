@@ -1,0 +1,9 @@
+<div class="py-2">
+<span class="px-2 mr-1 bg-2 color-w link-selection" role="button" (click)="onRemove($event.target)"
+      style="border-radius: 0.3rem; "
+
+      *ngFor="let ingredient of selectedIngredients">
+     <span id="{{ingredient}}">{{ingredient}}&nbsp;</span>
+     <fa-icon [icon]="faTimes" style="color: white" size="xs"></fa-icon>
+</span>
+</div>

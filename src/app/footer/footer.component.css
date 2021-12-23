@@ -1,0 +1,18 @@
+footer {
+  min-height: 10vh;
+}
+
+a{
+  color: var(--color2);
+  text-decoration-line: underline;
+}
+a:hover{
+  color:#1db954;
+  text-decoration-line: underline;
+}
+
+@media (min-width: 576px) {
+  .margin {
+    margin-left: 30vh;
+  }
+}

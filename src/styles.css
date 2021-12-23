@@ -1,0 +1,65 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+  --color1: #090909;
+  --color2: #3777FF;
+  --color3: #558B6E;
+  --color4: #704C5E;
+  --color5: #B88C9E;}
+
+body{
+  color:var(--color4)
+}
+.link-selection:hover{
+  background-color: #2a53a6!important;
+  text-decoration: none;
+}
+.bg-1 {background-color: var(--color1) !important;}
+.bg-2 {background-color: var(--color2) !important;}
+.bg-3 {background-color: var(--color3) !important;}
+.bg-4 {background-color: var(--color4) !important;}
+.bg-5 {background-color: var(--color5) !important;}
+.bg-w {background-color: white !important;}
+
+.color-1 {color: var(--color1) !important;}
+.color-2 {color: var(--color2) !important;}
+.color-3 {color: var(--color3) !important;}
+.color-4 {color: var(--color4) !important;}
+.color-5 {color: var(--color5) !important;}
+.color-w {color: white !important;}
+
+a{
+  color: var(--color2);
+}
+
+.h-min-100 {
+  min-height: 100vh;
+}
+.h-max-100 {
+  max-height: 100vh;
+}
+
+.h-min-80 {
+  min-height: 80vh;
+}
+
+.h-min-77 {
+  min-height: 77vh;
+}
+
+.h-min-60 {
+  min-height: 60vh;
+}
+
+.h-min-50 {
+  min-height: 50vh;
+}
+
+.h-max-80 {
+  max-height: 80vh;
+}
+
+.square{
+  width: 100vh;
+  height: 50vh;
+}

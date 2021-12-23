@@ -1,0 +1,9 @@
+<label for="typeahead-basic"></label>
+<input id="typeahead-basic" type="text" class="form-control" #input
+       [(ngModel)]="model"
+       [editable]=false
+       [ngbTypeahead]="search"
+       placeholder="Search ingredient(s)"
+       (selectItem)="modelChange($event)"
+/>
+
