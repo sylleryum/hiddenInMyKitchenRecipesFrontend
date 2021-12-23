@@ -8,7 +8,7 @@
   --color5: #B88C9E;}
 
 body{
-  color:var(--color4)
+  color:var(--color4);
 }
 .link-selection:hover{
   background-color: #2a53a6!important;
@@ -32,11 +32,12 @@ a{
   color: var(--color2);
 }
 
+.pb-container{
+  padding-bottom: 6rem !important;
+}
+
 .h-min-100 {
   min-height: 100vh;
-}
-.h-max-100 {
-  max-height: 100vh;
 }
 
 .h-min-80 {
@@ -55,8 +56,21 @@ a{
   min-height: 50vh;
 }
 
+.h-min-10{
+  min-height: 10vh;
+}
+
+/*max*/
 .h-max-80 {
   max-height: 80vh;
+}
+
+.h-max-90{
+  max-height: 90vh;
+}
+
+.h-max-100 {
+  max-height: 100vh;
 }
 
 .square{

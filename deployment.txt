@@ -1,0 +1,2 @@
+ng build --prod --base-href "https://sylleryum.github.io/hiddenInMyKitchenRecipesFrontend/"
+npx angular-cli-ghpages --no-silent --dir=dist/himkRecipes

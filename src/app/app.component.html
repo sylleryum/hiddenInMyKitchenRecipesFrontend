@@ -3,9 +3,9 @@
 </app-on-error>
 
 <ng-template #valid>
-     <div class="mt-2">
+     <div class="mt-2 h-max-90">
           <ng-template [ngIf]="availableIngredients.length>1" [ngIfElse]="loading">
-               <div class="">
+               <div class="pb-container">
                     <!--sidebar-->
                     <div class="col-12-local h-max-100 overflow-auto sidebar-config front pl-3 bg-w">
                          <app-side-menu class="pt-0"></app-side-menu>
@@ -26,7 +26,7 @@
                     </div>
 
                </div>
-               <app-footer class="p-0 ml-2 behind w-100">
+               <app-footer class="p-0 behind w-100 fixed-bottom">
                     <p class="p-0 m-0">Find more information and source code at:
                          <a href="https://github.com/sylleryum/hiddenInMyKitchenRecipesFrontend">https://github.com/sylleryum/hiddenInMyKitchenRecipesFrontend</a>
                     </p>
